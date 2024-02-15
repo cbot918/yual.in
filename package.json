@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "yale-dev":"MONGODB_URI_EXTERNAL=mongodb://yale:12345@localhost:27017/yalecodes?authSource=admin next dev",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
