@@ -1,0 +1,1 @@
+MONGODB_URI_EXTERNAL=mongodb://yale:12345@localhost:27017/yalecodes

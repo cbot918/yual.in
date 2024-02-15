@@ -15,7 +15,10 @@ export async function getPostsInMongo(): Promise<Post[]> {
       content: post.content.trim().substring(0, 100) + ' ...'
     })).sort((a: Post, b: Post) =>
       new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
-  } finally {
+  } catch (err){
+    console.log(err)
+  }
+  finally {
     await client.close();
   }
 }
